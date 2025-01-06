@@ -23,15 +23,12 @@ public class objects {
             e[i-1].name=sc.next();
 
         }
-
         for(int j=1;j<=n;j++)
         {
             e[j-1].display();
         }
 
         sc.close();
-
-
     }
     
 }
