@@ -47,6 +47,33 @@ class mystack
     }
     System.out.println();
   }
+
+  int indexOf(int a)
+  {
+    
+    for(int i=0;i<=index;i++)
+    {
+      if(a==arr[i])
+      {
+        return i;
+      }
+    }
+    return -1;
+  }
+  int lastIndexOf(int a)
+  {
+    int res=-1;
+    for(int i=0;i<=index;i++)
+    {
+      if(a==arr[index])
+      {
+        res=i;
+      }
+    }
+    if(res==-1) return -1;
+    else return res;
+
+  }
 }
 class Stackobject
 {
@@ -62,10 +89,17 @@ class Stackobject
     }
     s.display();
 
-    for(int i=1;i<=15;i++)
-    {
-      System.out.println(s.pop()+" ");
-    }
-  
+    // for(int i=1;i<=15;i++)
+    // {
+    //   System.out.println(s.pop()+" ");
+    // }
+    System.out.println(s.indexOf(4));
+    System.out.println(s.indexOf(10));
+    s.pop();
+    s.pop();
+    s.display();
+    s.push(1);
+    System.out.println(s.lastIndexOf(1));
+
   }
 }
